@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dangky</title>
+</head>
+<style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+</style>
+</head>
+<body style="background: cadetblue linear-gradient(to bottom,cadetblue,cornflowerblue)" >
+
+<h3>Register for a loan</h3>
+
+<div class="loanRegister()">
+    <form >
+        <label for="amount">Amount Of Money</label>
+        <input type="text" id="amount" name="amount" placeholder="Amount of money..">
+
+        <label for="tenor">Tenor</label>
+        <select id="tenor" name="tenor">
+            <option value="sixMonths">6 Months</option>
+            <option value="twelveMonths">12 Months</option>
+            <option value="twentyFourMonths">24 Months</option>
+        </select>
+
+        <label for="interes">Monthly Interes</label>
+        <input type="text" id="interes" name="interes" placeholder="Your Monthly Interes..">
+
+        <label for="interes1">Amount To Be Paid Monthly</label>
+        <input type="text" id="interes1" name="interes" placeholder="Amount to be paid monthly..">
+
+        <button onclick="registerLoan()" style="padding:7px 40px 7px">Apply</button>
+        <button onclick="needAdvice()" style="padding:7px 40px 7px">Advice</button>
+    </form>
+</div>
+</body>
+<script>
+    function registerLoan(){
+        return true
+    }
+    function needAdvice(){
+        return true
+    }
+</script>
+</table>
+</html>
