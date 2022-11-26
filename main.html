@@ -38,36 +38,29 @@
 
 <h3>Register for a loan</h3>
 
-<div class="loanRegister()">
+<div class="loanRegister">
     <form >
         <label for="amount">Amount Of Money</label>
         <input type="text" id="amount" name="amount" placeholder="Amount of money..">
 
         <label for="tenor">Tenor</label>
         <select id="tenor" name="tenor">
-            <option value="sixMonths">6 Months</option>
-            <option value="twelveMonths">12 Months</option>
-            <option value="twentyFourMonths">24 Months</option>
+            <option value="6">6 Months</option>
+            <option value="12">12 Months</option>
+            <option value="24">24 Months</option>
         </select>
 
         <label for="interes">Monthly Interes</label>
-        <input type="text" id="interes" name="interes" placeholder="Your Monthly Interes..">
+        <input disabled="true" type="text" id="interest" name="interes" placeholder="Your Monthly Interes..">
 
         <label for="interes1">Amount To Be Paid Monthly</label>
-        <input type="text" id="interes1" name="interes" placeholder="Amount to be paid monthly..">
+        <input disabled="true" type="text" id="monthly-payment" name="interes" placeholder="Amount to be paid monthly..">
 
-        <button onclick="registerLoan()" style="padding:7px 40px 7px">Apply</button>
-        <button onclick="needAdvice()" style="padding:7px 40px 7px">Advice</button>
+        <input onclick="calculatePaidMonthly()" type="button" style="padding:7px 40px 7px" value="Apply"/>
+        <input onclick="advide()" type="button" style="padding:7px 40px 7px" value="Advice"/>
     </form>
 </div>
 </body>
-<script>
-    function registerLoan(){
-        return true
-    }
-    function needAdvice(){
-        return true
-    }
-</script>
+<script type="text/javascript" src="main.js"></script>
 </table>
 </html>
