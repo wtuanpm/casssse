@@ -38,3 +38,13 @@ function calculatePaidMonthly() {
 function advide() {
     alert("Nhân viên của chúng tôi sẽ sớm liên hệ với bạn")
 }
+
+function apply() { 
+    var amountElement = document.getElementById('amount');
+    var amount = amountElement.value; 
+    if(!amount || amount <= 0)  { 
+        alert("Vui lòng nhập số tiền muốn vay")
+        return; 
+    }
+    alert("Hồ sơ của bạn đã được gửi, vui lòng đợi phê duyệt")
+}
